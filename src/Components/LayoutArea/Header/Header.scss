@@ -1,0 +1,25 @@
+.Header {
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+}
+.Header > * {
+  width: 100%;
+}
+.HeaderMenu {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin-top: 1%;
+}
+.HeaderMenu > * {
+ margin-left: 2%; 
+}
+
+.HeaderTitle {
+  display: inline-block;
+  font-size: xx-large;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
