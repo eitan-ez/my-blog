@@ -4,6 +4,7 @@ import "./Footer.css";
 function Footer(): JSX.Element {
 
     const [date, setDate] = useState(null);
+    // setDate(Date);
 
     return (
         <div className="Footer">

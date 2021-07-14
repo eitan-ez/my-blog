@@ -7,8 +7,7 @@ function Header(): JSX.Element {
       <div className="HeaderTitle">דברים אקראיים</div>
       <div className="HeaderMenu">
         <NavLink to="/about-me">עלי</NavLink>
-        <NavLink to="/articles">כל המאמרים</NavLink>
-        <NavLink to="/categories">קטגוריות</NavLink>
+        <NavLink to="/articles">מאמרים לפי קטגוריות</NavLink>
         <NavLink to="/random">מאמר אקראי</NavLink>
       </div>
     </div>

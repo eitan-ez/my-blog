@@ -8,16 +8,52 @@ import {
   MenuItem,
 } from "@material-ui/core";
 import { useForm } from "react-hook-form";
-import { ArticleModel } from "../../../Models/ArticleModel";
+import { ArticleModel, ArticleModelToSend } from "../../../Models/ArticleModel";
 import "./AddArticle.scss";
 import globals from "../../../Services/Globals";
 import notify from "../../../Services/Notification";
+import { useEffect } from "react";
+import CategoryModel from "../../../Models/CategoryModel";
+import { useState } from "react";
+
 
 function AddArticle(): JSX.Element {
   const { register, handleSubmit } = useForm<ArticleModel>();
+  const [categories, setCategories] = useState<Array<CategoryModel>>([]);
 
-  async function send(article: ArticleModel) {
+  const getCategories = async () => {
+    try{
+      const response = await axios.get<CategoryModel[]>(globals.urls.getAllCategories).then((result) => {
+        return result.data;
+      });
+     return response;
+    } catch (err) {
+      console.log(err);
+    }
+  }
+  useEffect(() => {
+    if(categories.length === 0){
+      getCategories().then((result) => {
+        setCategories(result);;
+      })
+      
+      console.log(categories);
+    }
+  })
+
+  async function send(articleTemp: ArticleModelToSend) {
+    
     try {
+    const article = new ArticleModel();
+    article.header = articleTemp.header;
+    article.urlHeader = articleTemp.urlHeader;
+    article.paragraphs = articleTemp.paragraphs;
+    article.references = articleTemp.references;
+    article.category = new CategoryModel();
+    article.category.id = articleTemp.category;
+
+    console.log(article);
+    
       await axios.post<ArticleModel>(
         globals.urls.admin + "/add-article",
         article
@@ -35,6 +71,14 @@ function AddArticle(): JSX.Element {
         <TextField
           {...register("header")}
           label="כותרת"
+          variant="standard"
+          type="text"
+          fullWidth
+          required
+        />
+        <TextField
+          {...register("urlHeader")}
+          label="URL"
           variant="standard"
           type="text"
           fullWidth
@@ -61,8 +105,7 @@ function AddArticle(): JSX.Element {
         <InputLabel>קטגוריה:</InputLabel>
         <Select {...register("category")} className="select" required>
           <InputLabel>Category</InputLabel>
-          <MenuItem value="TECH">טכנולוגיה</MenuItem>
-          <MenuItem value="TRIVIA">טריוויה</MenuItem>
+          {categories.map(c => <MenuItem key={c.id} value={c.id}>{c.hebrewName}</MenuItem>)}
         </Select>
         <ButtonGroup variant="text" fullWidth>
           <Button type="submit" color="primary">
@@ -74,7 +117,7 @@ function AddArticle(): JSX.Element {
         </ButtonGroup>
       </form>
     </div>
-  );
+  )
 }
 
 export default AddArticle;

@@ -1,3 +1,12 @@
 .SingleArticle {
-	
+	white-space: pre-line;
+    text-align: justify;
+}
+
+.SingleArticle > .mainBody {
+    padding-right: 15%;
+    padding-left: 15%;
+	text-align: justify;
+	line-height:1.5;
+	text-indent: 20px;
 }
