@@ -1,0 +1,58 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  /* height: 100%; */
+  text-align: center;
+  font-family: alef;
+  background-image: url(Assets/Images/Background.svg);
+  background-size: cover;
+}
+
+.ErrorMessage {
+  color: red;
+}
+.Article {
+  white-space: pre-line;
+  text-align: center;
+}
+
+.articleBody {
+  padding-right: 20%;
+  padding-left: 20%;
+  text-align: justify;
+  line-height: 1.5;
+  @media(max-width: 400px){
+    padding: 10%;
+  }
+
+}
+
+.articleImg{
+  max-height: 300px;
+  @media (max-width: 480px) {
+    max-width: 100vw;
+  }
+}
+
+.articleReferences {
+  text-align: start;
+  counter-reset: myCounter;
+  list-style: none;
+  &::before {
+    content: "הערות שוליים:";
+    border-bottom: 4px black;
+    display: block;
+    text-align: start;
+    font-size: 1.5rem;
+  }
+  li {
+    counter-increment: myCounter;
+    &::before {
+      content: counter(myCounter) ". ";
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+    }
+  }
+}

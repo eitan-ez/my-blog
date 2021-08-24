@@ -3,21 +3,21 @@ class Globals {
 
 class DevelopmentGlobals extends Globals {
     public urls = {
-        admin: "http://localhost:8080/api/admin",
-        getArticles: "http://localhost:8080/api/user/get-article/",
-        getAllArticles: "http://localhost:8080/api/user/get-all-articles/",
-        getAllCategories: "http://localhost:8080/api/user/get-all-categories/",
-        getByCategory: "http://localhost:8080/api/user/get-articles-by-category/",
+        admin: "http://myblog-env.eba-ueehxgpj.us-east-2.elasticbeanstalk.com/api/admin",
+        getArticles: "http://myblog-env.eba-ueehxgpj.us-east-2.elasticbeanstalk.com/api/user/get-article/",
+        getAllArticles: "http://myblog-env.eba-ueehxgpj.us-east-2.elasticbeanstalk.com/api/user/get-all-articles",
+        getAllCategories: "http://myblog-env.eba-ueehxgpj.us-east-2.elasticbeanstalk.com//api/user/get-all-categories",
+        getByCategory: "http://myblog-env.eba-ueehxgpj.us-east-2.elasticbeanstalk.com/api/user/get-articles-by-category/",
     };
 }
 
 class ProductionGlobals extends Globals {
     public urls = {
-        admin: "http://localhost:8080/api/admin",
-        getArticles: "http://localhost:8080/api/user/get-article/",
-        getAllArticles: "http://localhost:8080/api/user/get-all-articles/",
-        getAllCategories: "http://localhost:8080/api/user/get-all-categories/",
-        getByCategory: "http://localhost:8080/api/user/get-articles-by-category/",
+        admin: "/api/admin",
+        getArticles: "/api/user/get-article/",
+        getAllArticles: "/api/user/get-all-articles",
+        getAllCategories: "/api/user/get-all-categories",
+        getByCategory: "/api/user/get-articles-by-category/",
     };
 }
 

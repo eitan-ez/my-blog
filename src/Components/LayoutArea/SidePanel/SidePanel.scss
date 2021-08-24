@@ -1,7 +1,10 @@
-.SidePanel {
+.url::after{
+    content: '\00a0 \00B7 \00a0';
+    display: inline-block;
 }
 
-.url::after{
-content: '\00a0 \00B7 \00a0';
-display: inline-block;
+.SidePanel {
+    @media(max-width: 400px){
+        display: none;
+      }  
 }

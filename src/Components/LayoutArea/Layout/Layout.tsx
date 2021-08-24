@@ -3,7 +3,7 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Routing from "../Routing/Routing";
 import SidePanel from "../SidePanel/SidePanel";
-import "./Layout.css";
+import "./Layout.scss";
 
 function Layout(): JSX.Element {
     return (

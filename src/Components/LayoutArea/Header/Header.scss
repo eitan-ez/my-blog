@@ -1,8 +1,22 @@
 .Header {
   height: 100%;
   width: 100%;
-  background-color: rgb(163, 170, 236);
+  // background-image: url(HeaderBackground.svg);
+  // background-size: auto;
+  backdrop-filter: grayscale(0.5) opacity(0.8);
   box-sizing: border-box;
+  h1 {
+    display: inline-block;
+    font-size: xx-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0%;
+  }
+  h4{
+    font-weight: normal;
+    margin: 0%;
+  }
 }
 .Header > * {
   width: 100%;
@@ -18,10 +32,3 @@
  margin-left: 2%; 
 }
 
-.HeaderTitle {
-  display: inline-block;
-  font-size: xx-large;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-}

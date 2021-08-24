@@ -1,0 +1,29 @@
+.Layout {
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 15% 80% 5%;
+  grid-template-columns: repeat(6, 1fr);
+  header {
+    border-bottom: 5px solid rgb(255, 250, 245);
+    grid-column: span 6;
+  }
+  main {
+    grid-column: span 4;
+    background-color: #fff;
+    min-height: 50vh;
+    @media (max-width: 480px) {
+      width: 100vw;
+    }
+  }
+  aside {
+    height: 100vh;
+    padding: 10px;
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+  footer {
+    grid-column: span 6;
+  }
+}
