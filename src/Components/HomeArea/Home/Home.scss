@@ -1,3 +1,14 @@
 .Home {
-	
+    text-align: justify;
+    margin-top: 5%;
+    padding-right: 15%;
+	padding-left: 15%;
+    a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        &:hover{
+            background-color: rgb(226, 255, 219);
+            color:blue;
+        }
+    }
 }

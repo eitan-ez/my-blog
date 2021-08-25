@@ -1,34 +1,53 @@
 .Header {
   height: 100%;
   width: 100%;
-  // background-image: url(HeaderBackground.svg);
-  // background-size: auto;
   backdrop-filter: grayscale(0.5) opacity(0.8);
   box-sizing: border-box;
-  h1 {
-    display: inline-block;
-    font-size: xx-large;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0%;
-  }
-  h4{
+  h4 {
     font-weight: normal;
     margin: 0%;
   }
+  a {
+    text-decoration: none !important;
+  }
 }
+
 .Header > * {
   width: 100%;
 }
+
 .HeaderMenu {
   display: flex;
   justify-content: center;
   height: 100%;
-  margin-top: 1%;
   box-sizing: border-box;
-}
-.HeaderMenu > * {
- margin-left: 2%; 
+
+  
 }
 
+.HeaderMenu > a {
+  margin-left: 2%;
+  height: 20%;
+  position: relative;
+  &::before{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: black;
+
+    position: absolute;
+
+    transition: ease-in-out 150ms;
+  }
+}
+.HeaderMenu > a:hover::before {
+  width: 100%;
+}
+
+.mainHeader {
+  h1 {
+    color: black;
+    margin-bottom: 0%;
+  }
+}

@@ -19,6 +19,7 @@ function ContactMe(): JSX.Element {
 
     const userId: string = process.env.REACT_APP_USER_ID;
     const templateId: string = process.env.REACT_APP_TEMPLATE_ID;
+    const sercieId: string = process.env.REACT_APP_SERVICE_ID;
 
 
     async function send(contactInfo: ContactMeModel) {
@@ -32,7 +33,7 @@ function ContactMe(): JSX.Element {
             message: contactInfo.message,
         }
 
-        emailjs.send("service_vr1oq3z","template_cghhvg3", infoToSend, "user_jC1o1nhrZffMLq3dDPr4j")
+        emailjs.send(sercieId ,templateId, infoToSend, userId)
         .then((response) => {
                 notify.success("ההודעה נשלחה :) תודה על תגובתכם");
                 history.push("/home");

@@ -2,21 +2,21 @@ import { ArticleModel } from '../../../Models/ArticleModel';
 
 let allArticles: ArticleModel[] = [];
 
-allArticles.push(new ArticleModel(new Date(2021, 8, 10), "שירי דיסני - רפונזל", "disney-tangled"));
-allArticles.push(new ArticleModel(new Date(2021, 3, 30), "סיכוני אבטחה בסינון אינטרנט", "internet-censorship"));
-allArticles.push(new ArticleModel(new Date(2021, 2, 22), "מסקנות – Deezer vs Spotify", "deezer-spotify"));
-allArticles.push(new ArticleModel(new Date(2021, 1, 17), "מצעד המלחינים – טרבור מוריס", "trevor-moris"));
-allArticles.push(new ArticleModel(new Date(2021, 1, 14), "מצעד המלחינים – מרצ'ין פשיבילוביץ", "marcin-przybyłowicz"));
-allArticles.push(new ArticleModel(new Date(2020, 12, 10), "איר קלײנע ליכטעלעך", "likhtelekh"));
-allArticles.push(new ArticleModel(new Date(2020, 11, 15), "שירי דיסני – שיר הנושא", "disney-songs-theme-song"));
-allArticles.push(new ArticleModel(new Date(2020, 11, 12), "שירי דיסני – דמות הנבל", "disney-songs-villain"));
-allArticles.push(new ArticleModel(new Date(2020, 11, 9), "שירי דיסני – רצון הגיבור", "disney-songs-protagonist"));
-allArticles.push(new ArticleModel(new Date(2020, 11, 8), "שירי דיסני – הקדמה", "disney-songs-foreword"));
-allArticles.push(new ArticleModel(new Date(2020, 4, 21), "תוכנות לשיחת וידאו", "video-chat-apps"));
-allArticles.push(new ArticleModel(new Date(2019, 6, 19), "בחירות שקופות באזרבייג'אן", "azerbaijan"));
-allArticles.push(new ArticleModel(new Date(2019, 4, 9), "sofðu unga ástin mín", "sofðu-unga-ástin-mín"));
-allArticles.push(new ArticleModel(new Date(2018, 10, 2), "האחים מרקס וקזבלנקה", "the-marx-bros"));
-allArticles.push(new ArticleModel(new Date(2018, 7, 8), "בטיחות ברשת – אנטיוירוס", "antivirus"));
+allArticles.push(new ArticleModel(new Date(2021, 8, 10), "שירי דיסני - רפונזל", "disney-tangled", "לאחר הפסקה ארוכה המדור חוזר באופן חד פעמי לטובת ניתוח של השירים בסרט רפונזל."));
+allArticles.push(new ArticleModel(new Date(2021, 3, 30), "סיכוני אבטחה בסינון אינטרנט", "internet-censorship", " בשנים האחרונות נפוצות (בעיקר בציבור הדתי) תוכנות לסינון גלישה באינטרנט, שמטרתן, ובכן, היא לסנן את תכני האינטרנט הבעיתיים. מפורנו ועד פורומים לגידול עציצים, בהתאם לבקשת המשתמש. את התוכנות אפשר לסווג לשתי שיטות עיקריות..."));
+allArticles.push(new ArticleModel(new Date(2021, 2, 22), "מסקנות – Deezer vs Spotify", "deezer-spotify", "ם האוזניות החדשות שקניתי (סוני) הגיעה גם תקופת ניסיון של ארבעה חודשים בדיזר (פרימיום 360) והחלטתי לתת להם צ'אנס, כי אם כבר אז למה לא. מסקנות מהיתרונות והחסרונות של כל אחד מהשירותים."));
+allArticles.push(new ArticleModel(new Date(2021, 1, 17), "מצעד המלחינים – טרבור מוריס", "trevor-moris", " הנה אנחנו כבר במלחין השני במצעד המלחינים שלנו, האחד שהכי הופתעתי שעוד אין לו דף בויקי, טרבור מוריס."));
+allArticles.push(new ArticleModel(new Date(2021, 1, 14), "מצעד המלחינים – מרצ'ין פשיבילוביץ", "marcin-przybyłowicz", "נפתח את המצעד שלנו עם המלחין הצעיר ביותר (נולד ב1985). הפולני בעל השם הקליט מצא עבודה מיד אחרי שסיים את התואר בחברת משחקים פולנית נישתית למדי"));
+allArticles.push(new ArticleModel(new Date(2020, 12, 10), "איר קלײנע ליכטעלעך", "likhtelekh", " בתחילת המאה ה20 פירסם מוריס רוזנברג, משורר יידי ידוע, שיר באידיש בשם איר קליינע ליכטעלעך, שיר לחנוכה שנזכר בערגה בימים בהם לישראל היתה ממלכה ותוהה בלשון עדינה וכואבת מה צופן העתיד."));
+allArticles.push(new ArticleModel(new Date(2020, 11, 15), "שירי דיסני – שיר הנושא", "disney-songs-theme-song", "מתי מגיע שיא הסיפור? רוב חובבי התרבות המודרנית יגידו שבסוף הסיפור, הסיפור הולך ונבנה וההתרה תגיע לקראת הסוף הטוב, אבל כמו שיודע כל מי שישב מיואש במגילת אסתר וחיכה שהרעש הזה יגמר רק כדי לגלות שהקטע שבו הורגים את המן מגיע באמצע, זה לא תמיד המקרה."));
+allArticles.push(new ArticleModel(new Date(2020, 11, 12), "שירי דיסני – דמות הנבל", "disney-songs-villain", "שיר הנבל הוא החלק הכי קשה לביצוע מוצלח במחזה ברודווי. הרצון של הדמות הראשית הוא החלק שמניע את הסיפור, הרצון של הנבל הוא המכשול וככל שהנבל מוצלח יותר המכשול מעניין יותר ולפיכך הסיפור כולו מעניין יותר."));
+allArticles.push(new ArticleModel(new Date(2020, 11, 9), "שירי דיסני – רצון הגיבור", "disney-songs-protagonist", "שיר מה אני רוצה של הגיבור יגיע תמיד בתחילת הסרט והוא מראה לנו את  הדמות ברגעי הפתיחה. אחרי שראינו את העולם (או תוך כדי, כמו בהיפה  והחיה) אנחנו רוצים לפגוש את נושע המחשב ולשאול את עצמנו מה מטרתו. השיר  הזה הוא מקום נהדר לשאלת מה העלילה העיקרית של הסרט ואיך הוא בא לקדם את הגיבור שלנו."));
+allArticles.push(new ArticleModel(new Date(2020, 11, 8), "שירי דיסני – הקדמה", "disney-songs-foreword", "מפה לשם מצאתי את עצמי עם כמה דברים חשובים, אז מיותר לציין שפתאום הסתבר שזה זמן מצוין לעבור על כל סרטי הרנסאנס של דיסני ולמיין את הופעת השירים בהם."));
+allArticles.push(new ArticleModel(new Date(2020, 4, 21), "תוכנות לשיחת וידאו", "video-chat-apps", " מצורפת טבלה קצרה של שמונת התוכנות הפופולריות ביותר לשיחות וידאו, יחד  עם פירוט קצר על כמה מהן."));
+allArticles.push(new ArticleModel(new Date(2019, 6, 19), "בחירות שקופות באזרבייג'אן", "azerbaijan", "מרבית המדינות בעולם מתקיימות כיום בחירות דמוקרטיות לשלטון. בעוד במדינות רבות מדובר בחגיגה לדמוקרטיה, עם שקיפות ותקשורת הוגנת (ולפעמים  כל כך נהנים מהחגיגה שעושים עוד סיבוב) פעמים רבות עולה חשד לזיופים..."));
+allArticles.push(new ArticleModel(new Date(2019, 4, 9), "sofðu unga ástin mín", "sofðu-unga-ástin-mín", " היה היה פעם זוג איסלנדים שחיו להם בשקט באיסלנד, לגבר קראו אייבנדור-מן-ההר (Fjalla-Eyvindur) ולאישה קראו הלה (Halla)."));
+allArticles.push(new ArticleModel(new Date(2018, 10, 2), "האחים מרקס וקזבלנקה", "the-marx-bros", " בשנת 1942 הוציאו אולפני האחים וורנר (Warner bros.) את אחת הקלאסיקות הקלונעיות המצליחות ביותר בהיסטוריה, קזבלנקה, בכיכובם של אינגריד ברגמן והמפרי בוגרט. כשלוש שנים לאחר מכן נודע לאחים וורנר כי האחים מרקס (Marx bros), אחים בדרנים מהמפורסמים ביותר בתקופתם, החליטו להוציא סרט הומוריסטי שצוחק על סרטם שייקרא לילות קזבלנקה."));
+allArticles.push(new ArticleModel(new Date(2018, 7, 8), "בטיחות ברשת – אנטיוירוס", "antivirus", "הגנה על מחשבנו האישי הוא נושא חשוב מאין כמותו, שאפשר להתמודד איתו בצורה לא רעה עם קצת הגיון בריא ותוכנה או שתיים, אך עדיין רבים נופלים בו. הסדרה תתחיל מהצורך מתוכנות הגנה ותעבור להסברים כלליים על בטיחות ברשת ואיך לגלוש נכון."));
 
 
 export default allArticles;

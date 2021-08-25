@@ -1,4 +1,5 @@
 import { Route, Switch } from "react-router";
+import { Redirect } from "react-router-dom";
 import Antivirus from "../../ArticlesArea/ArticlesList/Antivirus/Antivirus";
 import Azerbaijan from "../../ArticlesArea/ArticlesList/Azerbaijan/Azerbaijan";
 import DeezerSpotify from "../../ArticlesArea/ArticlesList/DeezerSpotify/DeezerSpotify";
@@ -18,6 +19,7 @@ import RandomArticle from "../../ArticlesArea/RandomArticle/RandomArticle";
 import AboutMe from "../../HomeArea/AboutMe/AboutMe";
 import Home from "../../HomeArea/Home/Home";
 import ContactMe from "../../SharedArea/ContactMe/ContactMe";
+import Page404 from "../../SharedArea/Page404/Page404";
 
 function Routing(): JSX.Element {
   return (
@@ -43,6 +45,9 @@ function Routing(): JSX.Element {
         <Route path="/articles/sofðu-unga-ástin-mín" component={SofðuUnga} exact />
         <Route path="/articles/the-marx-bros" component={MarxBros} exact />
         <Route path="/articles/antivirus" component={Antivirus} exact />
+
+        <Redirect from="/" to="/home" exact />
+        <Route component={Page404} />
 
 
       </Switch>
