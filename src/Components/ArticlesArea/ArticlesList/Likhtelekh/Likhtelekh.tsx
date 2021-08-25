@@ -29,7 +29,7 @@ function Likhtelekh(): JSX.Element {
           רק בבבית האחרון בשיר [3].
         </p>
       </div>
-      <img src={LikhtelekhPic} className="articleImg"/>
+      <img src={LikhtelekhPic} className="articleImg" alt="תרגום השיר"/>
       <ul className="articleReferences">
         <li>
           לשיר יצאו עוד הרבה תרגומים, כמעט כולם הלכו לכיוון שהלך בו גרוסמן.

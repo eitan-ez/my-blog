@@ -51,7 +51,7 @@ function DisneySongs1(): JSX.Element {
           שדילג עליו. מחר נתחיל בחלקים המעניינים של הטבלה – שיר הדמות הראשית.
         </p>
       </div>
-      <img src={DisneySongsTable} className="articleImg" />
+      <img src={DisneySongsTable} className="articleImg" alt="טבלת החלוקה לשירים של דיסני"/>
     </div>
   );
 }

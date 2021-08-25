@@ -1,8 +1,7 @@
 .Layout {
-  min-height: 100vh;
+  // min-height: 100vh;
   box-sizing: border-box;
   display: grid;
-  grid-template-rows: 15% 80% 5%;
   grid-template-columns: repeat(6, 1fr);
   header {
     border-bottom: 5px solid rgb(255, 250, 245);

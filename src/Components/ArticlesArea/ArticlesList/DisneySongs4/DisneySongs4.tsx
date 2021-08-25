@@ -82,7 +82,7 @@ function DisneySongs4(): JSX.Element {
           לפתור את בעיית הנבל, הבעיה העיקרית של הסרט.
         </p>
       </div>
-      <img src={DisneySongs4Table} className="articleImg" />
+      <img src={DisneySongs4Table} className="articleImg" alt="טבלת החלוקה לשירים של דיסני"/>
       <ul className="articleReferences">
         <li>
           מגילת אסתר היא דוגמה מעולה לתסריט דיסני באופן כללי . במקרה הנוכחי

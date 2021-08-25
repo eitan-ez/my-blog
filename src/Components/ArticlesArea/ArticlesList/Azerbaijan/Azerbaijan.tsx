@@ -1,4 +1,3 @@
-import allArticles from "../AllArticles";
 
 function Azerbaijan(): JSX.Element {
   return (

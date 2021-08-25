@@ -1,5 +1,4 @@
 import VideoChatPic from "./VideoChatPic.jpg";
-import allArticles from "../AllArticles";
 
 function VideoChat(): JSX.Element {
   return (
@@ -10,7 +9,7 @@ function VideoChat(): JSX.Element {
           מצורפת טבלה קצרה של שמונת התוכנות הפופולריות ביותר לשיחות וידאו, יחד
           עם פירוט קצר על כמה מהן.
         </p>
-      <img src={VideoChatPic} />
+      <img src={VideoChatPic} alt="טבלת חלוקה לתוכנות וסיכום עם הסבר"/>
 
         <h5>זום:</h5>
         <p>

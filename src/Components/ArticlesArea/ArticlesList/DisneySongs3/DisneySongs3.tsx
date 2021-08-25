@@ -41,7 +41,7 @@ function DisneySongs3(): JSX.Element {
           כסף.
         </p>
       </div>
-      <img src={DisneySongs3Table} className="articleImg" />
+      <img src={DisneySongs3Table} className="articleImg" alt="טבלת החלוקה לשירים של דיסני" />
       <ul className="articleReferences">
         <li> [הכנס כאן תמונת אילוסטרציה של נֵבֶל]</li>
         <li>

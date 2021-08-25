@@ -47,7 +47,7 @@ function Tangled(): JSX.Element {
                     המקום הכללי בו תעשיית האנימציה נמצאת.
                 </p>
             </div>
-            <img src={TangledPic} />
+            <img src={TangledPic} alt="טבלת החלוקה לשירים של דיסני"/>
             <ul className="articleReferences">
                 <li>Mother Knows Best, When Will My Life Begin, I've Got A Dream</li>
                 <li>לא אכתוב כאן את כל המופעים שלו, תצטרכו לצפות בעצמכם בסרט כדי לגלות. לא חשבתם שאעשה לכם את כל העבודה, נכון?</li>

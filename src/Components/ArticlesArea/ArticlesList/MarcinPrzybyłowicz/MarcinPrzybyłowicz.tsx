@@ -42,7 +42,7 @@ function MarcinPrzybyłowicz(): JSX.Element {
         </p>
 
             </div>
-            <img src={MarcinPrzybyłowiczPic} className="articleImg"/>
+            <img src={MarcinPrzybyłowiczPic} className="articleImg" alt="Marcin Przybyłowic by Solika27, CC BY-SA 4.0"/>
             <ul className="articleReferences">
                 <li>למרות שהבמאי טרח להדגיש שהם בכלל בכלל לא לפי המשחק. לא פלא שבסוף היא יצאה כמו שהיא יצאה.</li>
                 <li>בכל זאת, פולין. אי אפשר בלי.</li>

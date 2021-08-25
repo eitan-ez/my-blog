@@ -9,7 +9,7 @@ function Footer(): JSX.Element {
     useEffect(() => {
         const now = new Date().getFullYear().toString();
         setDate(now);
-    })
+    },[])
 
     return (
         <div className="Footer">

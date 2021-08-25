@@ -13,8 +13,8 @@ class Home extends Component<{}> {
 
     public render(): JSX.Element {
         // gets the date 2 years ago
-        const now = new Date();
-        const myDate = new Date(now.getFullYear() - 2);
+        // const now = new Date();
+        // const myDate = new Date(now.getFullYear() - 2);
 
 
 
