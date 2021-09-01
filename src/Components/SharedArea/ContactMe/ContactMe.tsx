@@ -33,18 +33,14 @@ function ContactMe(): JSX.Element {
             message: contactInfo.message,
         }
 
+        console.log(process.env);
+
         emailjs.send(sercieId ,templateId, infoToSend, userId)
         .then((response) => {
                 notify.success("ההודעה נשלחה :) תודה על תגובתכם");
                 history.push("/home");
             })
-            .catch((error) => {
-                notify.error(error)
-                console.log('FAILED...', error);
-            }
-            );
-
-
+            .catch((error) => notify.error(error));
     }
 
 

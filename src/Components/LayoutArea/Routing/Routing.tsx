@@ -1,5 +1,6 @@
 import { Route, Switch } from "react-router";
 import { Redirect } from "react-router-dom";
+import AllArticles from "../../ArticlesArea/AllArticles/AllArticles";
 import Antivirus from "../../ArticlesArea/ArticlesList/Antivirus/Antivirus";
 import Azerbaijan from "../../ArticlesArea/ArticlesList/Azerbaijan/Azerbaijan";
 import DeezerSpotify from "../../ArticlesArea/ArticlesList/DeezerSpotify/DeezerSpotify";
@@ -29,6 +30,7 @@ function Routing(): JSX.Element {
         <Route path="/random" component={RandomArticle} exact />
         <Route path="/about-me" component={AboutMe} exact />
         <Route path="/contact-me" component={ContactMe} exact />
+        <Route path="/all-articles" component={AllArticles} exact />
 
         <Route path="/articles/disney-tangled" component={Tangled} exact />
         <Route path="/articles/internet-censorship" component={NetCencor} exact />

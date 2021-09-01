@@ -1,7 +1,12 @@
 .Header {
-  height: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  height: 60px;
   box-sizing: border-box;
+  background-color: #008ee2;
   h4 {
     font-weight: normal;
     margin: 0%;
@@ -11,42 +16,37 @@
   }
 }
 
-.Header > * {
+.HeaderMenu {
+  flex: 1 1 60%;
+  display: flex;
+  flex-shrink: 0;
+  box-sizing: border-box;
   width: 100%;
 }
 
-.HeaderMenu {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  box-sizing: border-box;
-
-  
-}
-
 .HeaderMenu > a {
+  font-size: 1.2rem;
   margin-left: 2%;
-  height: 20%;
   position: relative;
-  &::before{
+  &::after{
     content: "";
     display: block;
     height: 5px;
     width: 0%;
-    background-color: black;
-
+    background-color: #dea01e;
     position: absolute;
-
     transition: ease-in-out 150ms;
   }
 }
-.HeaderMenu > a:hover::before {
+.HeaderMenu > a:hover::after {
   width: 100%;
 }
-
 .mainHeader {
-  h1 {
-    color: black;
-    margin-bottom: 0%;
+  flex: 1 1 40%;
+  display: flex;
+  img{
+    height: 55px;
+    padding: 10px;
+    padding-right: 3%;
   }
 }

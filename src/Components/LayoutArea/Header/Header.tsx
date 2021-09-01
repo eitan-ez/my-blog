@@ -1,13 +1,15 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
+import logo from "../../../Assets/Images/logo.png"
 import "./Header.scss";
 
 function Header(): JSX.Element {
+
+  const history = useHistory();
   return (
     <div className="Header">
       <NavLink to="/home" className="mainHeader">
-      <h1>דברים אקראיים</h1>
+        <img src={logo} alt="logo"/>
       </NavLink>
-      <h4>הבלוג של איתן עציון</h4>
       <div className="HeaderMenu">
         <NavLink to="/home">דף ראשי</NavLink>
         <NavLink to="/about-me">עלי</NavLink>

@@ -1,14 +1,33 @@
 .Home {
-    text-align: justify;
-    padding-top: 5%;
-    padding-right: 15%;
-	padding-left: 15%;
-    a{
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        &:hover{
-            background-color: rgb(226, 255, 219);
-            color:blue;
-        }
-    }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+}
+.homeButton {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.homeArticle {
+  display: flex;
+  border-bottom: 1px solid gray;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  img {
+    max-width: 600px;
+  }
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+  &:hover {
+    background-color: rgb(226, 255, 219);
+    color: blue;
+  }
+
+}
+.homeArticleText {
+  font-size: 1.2rem;
 }

@@ -1,0 +1,24 @@
+.AllArticles {
+    text-align: justify;
+    padding-top: 5%;
+    padding-right: 15%;
+    padding-left: 15%;
+    a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      &:hover {
+        background-color: rgb(226, 255, 219);
+        color: blue;
+      }
+    }
+    h4 {
+      &::before {
+        content: "\2022"+ "  ";
+        top: 4px;
+        position: relative;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 2em;
+      }
+    }  
+}
