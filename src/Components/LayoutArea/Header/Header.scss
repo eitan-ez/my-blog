@@ -1,5 +1,6 @@
 .Header {
   position: fixed;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,11 +23,18 @@
   flex-shrink: 0;
   box-sizing: border-box;
   width: 100%;
+  @media(max-width: 480px) {
+    flex:1 1 80%;
+  }
 }
 
 .HeaderMenu > a {
   font-size: 1.2rem;
   margin-left: 2%;
+  @media(max-width: 480px) {
+    font-size: 0.9rem;
+    margin-left: 4%;
+  }
   position: relative;
   &::after{
     content: "";
@@ -44,6 +52,9 @@
 .mainHeader {
   flex: 1 1 40%;
   display: flex;
+  @media(max-width: 480px) {
+    flex:1 1 30%;
+  }
   img{
     height: 55px;
     padding: 10px;

@@ -5,6 +5,7 @@ import Marx_Brothers_1948 from "../../ArticlesArea/ArticlesList/MarxBros/Marx_Br
 import "./Home.scss";
 import AllArticlesButton from "../AllArticlesButton/AllArticlesButton";
 import { RouteComponentProps } from "react-router-dom";
+import Slider from "../Slider/Slider";
 
 interface HomeProps extends RouteComponentProps {}
 
@@ -17,14 +18,19 @@ class Home extends Component<HomeProps> {
 
 
     public render(): JSX.Element {
-        // gets the date 2 years ago
-        // const now = new Date();
-        // const myDate = new Date(now.getFullYear() - 2);
 
 
 
         return (
             <div className="Home">
+                <div className="homeText">
+                שלום וברוכים הבאים לבלוג הצנוע שלי! שמי איתן עציון והבלוג הזה הוא לקט הגיגים שכתבתי בזמנים שונים. מוזמנים לבחור מאמר ולהתחיל לקרוא 😊
+                </div>
+                <div className="slider">
+                    {/* the pictures slider, props in order to use history.push */}
+                <Slider {...this.props}/>
+                </div>
+                {/* this main area is only shown in PC */}
                 <div className="homeArticle" onClick={()=>this.props.history.push("/articles/marcin-przybyłowicz")}>
                     <div className="homeArticleText">
                         <h4>מצעד המלחינים – מרצ'ין פשיבילוביץ'</h4>

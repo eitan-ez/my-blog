@@ -19,6 +19,7 @@ import VideoChat from "../../ArticlesArea/ArticlesList/VideoChat/VideoChat";
 import RandomArticle from "../../ArticlesArea/RandomArticle/RandomArticle";
 import AboutMe from "../../HomeArea/AboutMe/AboutMe";
 import Home from "../../HomeArea/Home/Home";
+import Slider from "../../HomeArea/Slider/Slider";
 import ContactMe from "../../SharedArea/ContactMe/ContactMe";
 import Page404 from "../../SharedArea/Page404/Page404";
 
@@ -31,6 +32,7 @@ function Routing(): JSX.Element {
         <Route path="/about-me" component={AboutMe} exact />
         <Route path="/contact-me" component={ContactMe} exact />
         <Route path="/all-articles" component={AllArticles} exact />
+        <Route path="/slider" component={Slider} exact />
 
         <Route path="/articles/disney-tangled" component={Tangled} exact />
         <Route path="/articles/internet-censorship" component={NetCencor} exact />
